@@ -161,6 +161,16 @@ public class Main {
                     }
                     ArrayList<ArmaEspecial> listaArmasGremio = gremio.getArmas();
 
+                    if (subopcion == 5) {
+                        System.out.println("Cancelado");
+                        continue;
+                    }
+
+                    if (subopcion != 1 && subopcion != 2 && subopcion != 3 && subopcion != 4) {
+                        System.out.println("Opción incorrecta");
+                        continue;
+                    }
+
                     System.out.println("Nombre del " + tiposDeHeroes[subopcion - 1] + ": ");
                     String nombreHeroe = scanner.nextLine();
 
